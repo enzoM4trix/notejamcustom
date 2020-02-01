@@ -9,5 +9,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN mkdir -p /data
 WORKDIR /data/notejam/flask
 
-CMD ["export","ENVIRONMENT='development python runserver.py'"]
-CMD ["python", "runserver.py"]
+CMD ["ENVIRONMENT=development", "python", "runserver.py"]
